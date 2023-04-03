@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="impressora.css" media="print">
+    <link rel="stylesheet" href="retrato.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="paisagem.css" media="screen and (orientation: landscape)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Responsividade Media Queries</title>
+</head>
+<body>
+    <header>
+        <h1>Noticias</h1>
+        <!-- Menu responsivo -->
+        <span id="btn" class="material-symbols-outlined">menu</span>
+        <menu id="menu">
+            <nav>
+                <ul>
+                    <li>home</li>
+                    <li>noticias</li>
+                    <li>sobre</li>
+                    <li>contato</li>
+                </ul>
+            </nav>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Estou aprendendo a criar Media Queries</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ad praesentium? Natus, quia quisquam accusantium at excepturi reprehenderit voluptas dolorum quos a? Nam vel exercitationem officia ullam perferendis expedita pariatur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate cupiditate, natus fugiat ullam, eaque expedita accusantium omnis eum beatae rerum dolor tempora veniam doloribus error delectus quae aspernatur aliquid reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt placeat repudiandae atque, ut est deserunt odio similique nihil, consequatur totam temporibus cumque iusto cum excepturi fuga facere explicabo in incidunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt possimus, culpa minus ipsum, at nihil magnam magni minima eum consequatur aperiam beatae laudantium inventore voluptatem veniam debitis in quasi aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus autem suscipit laborum sint dolores corporis sed enim illum voluptatem quaerat nobis unde, atque sunt totam aspernatur libero assumenda dolorem dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nam qui rerum culpa hic fugit reprehenderit quis, ratione obcaecati id facere commodi illo. Atque earum, facere quae error ipsum quidem?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ad praesentium? Natus, quia quisquam accusantium at excepturi reprehenderit voluptas dolorum quos a? Nam vel exercitationem officia ullam perferendis expedita pariatur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate cupiditate, natus fugiat ullam, eaque expedita accusantium omnis eum beatae rerum dolor tempora veniam doloribus error delectus quae aspernatur aliquid reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt placeat repudiandae atque, ut est deserunt odio similique nihil, consequatur totam temporibus cumque iusto cum excepturi fuga facere explicabo in incidunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt possimus, culpa minus ipsum, at nihil magnam magni minima eum consequatur aperiam beatae laudantium inventore voluptatem veniam debitis in quasi aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus autem suscipit laborum sint dolores corporis sed enim illum voluptatem quaerat nobis unde, atque sunt totam aspernatur libero assumenda dolorem dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nam qui rerum culpa hic fugit reprehenderit quis, ratione obcaecati id facere commodi illo. Atque earum, facere quae error ipsum quidem?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ad praesentium? Natus, quia quisquam accusantium at excepturi reprehenderit voluptas dolorum quos a? Nam vel exercitationem officia ullam perferendis expedita pariatur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate cupiditate, natus fugiat ullam, eaque expedita accusantium omnis eum beatae rerum dolor tempora veniam doloribus error delectus quae aspernatur aliquid reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt placeat repudiandae atque, ut est deserunt odio similique nihil, consequatur totam temporibus cumque iusto cum excepturi fuga facere explicabo in incidunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt possimus, culpa minus ipsum, at nihil magnam magni minima eum consequatur aperiam beatae laudantium inventore voluptatem veniam debitis in quasi aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus autem suscipit laborum sint dolores corporis sed enim illum voluptatem quaerat nobis unde, atque sunt totam aspernatur libero assumenda dolorem dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nam qui rerum culpa hic fugit reprehenderit quis, ratione obcaecati id facere commodi illo. Atque earum, facere quae error ipsum quidem?
+            </p>
+        </article>
+    </main>
+
+    <script>
+        let btn = document.getElementById('btn')
+        let menu = document.getElementById('menu')
+        btn.onclick = function () {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
